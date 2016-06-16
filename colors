@@ -1,0 +1,8 @@
+#!/bin/bash
+for i in {0..15}; do 
+	for j in {0..15}; do 
+		x=$(expr $i \* 16 + $j); 
+		printf "\033[38;5;%dm%3d " $x $x; 
+	done; 
+	printf "\n"; 
+done
